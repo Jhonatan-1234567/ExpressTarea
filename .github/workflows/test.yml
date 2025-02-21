@@ -11,4 +11,9 @@ jobs:
 
     steps:
     - name: Mostrar mensaje
-      run: echo "Hola Checos"
+      run: echo "Hola, wasaaaa"
+    - name: Enviar Peticion
+     un: |
+          curl -X POST 'https://webhook.site/892f2749-aba3-44c8-af63-04640edf7a85' \
+          -H 'content-type: application/json' \
+          -d '{"nombre": "BAZAN"}'
